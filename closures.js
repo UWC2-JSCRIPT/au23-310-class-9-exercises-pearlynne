@@ -24,13 +24,16 @@ const createMessageHolder = () => {
 	let array = [];
 
 	const addMessage = (string) => {
-		array.push(string)
-	}
+		array.push(string);
+	};
 	const getMessage = (i) => {
-		return array[i]
+		return array[i];;
 	}
 
-	return { addMessage, getMessage }
+	return {
+		addMessage,
+		getMessage
+	};
 };
 
 // Test
@@ -68,9 +71,9 @@ console.log(addThree(41));
 // - This function should return the greeting combined with the name, (i.e. "Hello Matt")
 const createGreeting = function (greeting) {
 	const nameGreeting = function (name) {
-		return `${greeting}, ${name}`
-	}
-	return nameGreeting
+		return `${greeting}, ${name}`;
+	};
+	return nameGreeting;
 };
 
 // Test
